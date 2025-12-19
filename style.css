@@ -1,0 +1,257 @@
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+    --bg-light: #f7fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+
+/* Buttons */
+.btn-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    color: white;
+}
+
+
+/* Photo Container */
+.photo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decorative-box {
+    position: absolute;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.box-1 {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #a8c0ff, #c2e9fb);
+    top: -20px;
+    left: 10%;
+    opacity: 0.5;
+}
+
+.box-2 {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #fbc2eb, #ffecd2);
+    bottom: -20px;
+    right: 10%;
+    opacity: 0.5;
+}
+
+.box-3 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    top: 50%;
+    right: -10px;
+    opacity: 0.7;
+}
+
+.photo-frame {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Skills */
+.skill-card {
+    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #c7d2fe;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+}
+
+/* Experience */
+.experience-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.project-card {
+    background: linear-gradient(135deg, #fafafa, white);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Education */
+.education-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* certification */
+.award-card {
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #fed7aa;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Contact */
+.contact-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.contact-link:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-photo {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .photo-frame {
+        padding: 25px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
